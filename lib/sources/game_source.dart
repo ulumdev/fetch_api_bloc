@@ -5,7 +5,7 @@ import 'package:fetch_api_bloc/models/game.dart';
 import 'package:http/http.dart' as http;
 
 class GameSource {
-  static Future<List<Game>?> getGames() async {
+  static Future<List<Game>?> getLiveGames() async {
     String url = 'https://www.freetogame.com/api/games';
     try {
       final response = await http.get(Uri.parse(url));
